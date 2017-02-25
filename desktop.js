@@ -15,7 +15,7 @@ menubar({
   movable: false,
   resizable: false,
   useContentSize: true,
-  height: 525,
+  height: 509,
   width: 340,
   index: `file://${__dirname}/app.html`,
   y: 30,
