@@ -9,8 +9,7 @@ export default {
       scope: 'request',
       client_id: CLIENT_ID,
     });
-
-    return `https://login.uber.com/oauth/authorize?${query}`;
+    return `https://login.uber.com/oauth/v2/authorize?${query}`;
   },
 
   generateRegisterUrl() {
