@@ -9,7 +9,7 @@
     "dev": "webpack --config webpack.dev.config.js & node index.js",
     "desktop": "webpack --config webpack.prod.config.js && electron desktop.js",
     "lint": "./node_modules/eslint/bin/eslint.js \"src/**/?(*.js|*.jsx)\" index.js",
-    "build": "NODE_ENV=production webpack --bail --config webpack.prod.config.js && npm prune && electron-packager . Fastlane --platform=darwin --arch=x64 --version=0.36.6 --out=release --overwrite --icon=./public/icons/icon.icns --ignore=\"node_modules/(webpack|babel-eslint|eslint|eslint-config-airbnb|eslint-plugin-react|pre-commit|node-sass|sass-loader|style-loader)\"",
+    "build": "NODE_ENV=production webpack --bail --config webpack.prod.config.js && npm prune && electron-packager . Fastlane --platform=darwin --arch=x64 --electron-version=1.4.15 --out=release --overwrite --icon=./public/icons/icon.icns --ignore=\"node_modules/(webpack|babel-eslint|eslint|eslint-config-airbnb|eslint-plugin-react|pre-commit|node-sass|sass-loader|style-loader)\"",
     "build:dmg": "electron-installer-dmg release/Fastlane-darwin-x64/Fastlane.app Fastlane --out=./release --icon=./public/icons/icon.icns --background=./public/img/background.png --overwrite"
   },
   "dependencies": {
