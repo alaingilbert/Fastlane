@@ -3,3 +3,4 @@ node_modules
 *.iml
 config.json
 release
+public/bundle.js
